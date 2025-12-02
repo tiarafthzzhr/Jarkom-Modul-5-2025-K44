@@ -22,7 +22,6 @@ No | Nama | NRP
      - **Gilgalad:** 100 host (Ellen).
      - **Elendil:** 200 host (Jane).
 
-# Tabel Subnetting
 
 | Kode | Network Address | Subnet Mask       | CIDR | Broadcast Address | Range Host                |
 |------|------------------|-------------------|------|--------------------|----------------------------|
