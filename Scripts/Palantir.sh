@@ -1,3 +1,4 @@
+# Konfigurasi Web Server dan Firewall Portscan untuk Palantir
 cat << EOF > /etc/network/interfaces
 auto lo
 iface lo inet loopback

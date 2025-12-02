@@ -1,3 +1,4 @@
+# Konfigurasi NAT Router dan DHCP Relay untuk Osgiliath
 cat << EOF > /etc/network/interfaces
 auto lo
 iface lo inet loopback

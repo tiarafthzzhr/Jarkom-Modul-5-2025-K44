@@ -1,3 +1,4 @@
+# Konfigurasi DHCP Server dan Firewall untuk Vilya
 cat << EOF > /etc/network/interfaces
 auto lo
 iface lo inet loopback

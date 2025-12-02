@@ -1,3 +1,4 @@
+# Konfigurasi DHCP Client untuk Khamul
 # Client DHCP
 cat << EOF > /etc/network/interfaces
 auto lo

@@ -1,3 +1,4 @@
+# Konfigurasi Router dan DHCP Relay untuk Rivendell
 cat << EOF > /etc/network/interfaces
 auto lo
 iface lo inet loopback

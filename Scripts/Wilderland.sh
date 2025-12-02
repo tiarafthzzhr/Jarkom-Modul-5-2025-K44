@@ -1,3 +1,4 @@
+# Konfigurasi Router, DHCP Relay, dan Firewall untuk Wilderland
 cat << EOF > /etc/network/interfaces
 auto lo
 iface lo inet loopback
