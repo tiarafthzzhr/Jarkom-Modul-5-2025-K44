@@ -51,6 +51,19 @@ No | Nama | NRP
 
 
 3. Buatlah konfigurasi rute untuk menghubungkan semua subnet dengan benar. Pastikan perangkat dapat saling terhubung.
+   ##### Static Config
+   ````
+   cat << EOF > /etc/network/interfaces
+   auto lo
+   iface lo inet loopback
+
+   auto (Interface)
+   iface (Interface) inet static
+      address (Ip Address)
+      netmask (Subnet Mask)
+   EOF
+   ````
+
 
 4. **Konfigurasi Service → Dikerjakan setelah Misi 2 No. 1:**
 
