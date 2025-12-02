@@ -12,14 +12,13 @@ EOF
 
 echo "nameserver 192.168.122.1" > /etc/resolv.conf
 
-# DNS SERVER
 apt update
 apt install bind9 -y
 
 nano /etc/bind/named.conf.local
-zone "k51.com" {
+zone "k44.com" {
     type master;
-    file "/etc/bind/k51.com";
+    file "/etc/bind/k44.com";
 };
 
 zone "0.89.10.in-addr.arpa" {
@@ -27,9 +26,9 @@ zone "0.89.10.in-addr.arpa" {
     file "/etc/bind/0.89.10.in-addr.arpa";
 };
 
-nano /etc/bind/k51.com
+nano /etc/bind/k44.com
 $TTL    604800          ; Waktu cache default (detik)
-@       IN      SOA     k51.com. root.k51.com. (
+@       IN      SOA     k44.com. root.k44.com. (
                         2025100401 ; Serial (format YYYYMMDDXX)
                         604800     ; Refresh (1 minggu)
                         86400      ; Retry (1 hari)
@@ -37,12 +36,12 @@ $TTL    604800          ; Waktu cache default (detik)
                         604800 )   ; Negative Cache TTL
 ;
 
-@         IN      NS      k51.com.
+@         IN      NS      k44.com.
 @       IN      A       192.233.0.42
 
 nano /etc/bind/0.89.10.in-addr.arpa
 $TTL    604800          ; Waktu cache default (detik)
-@       IN      SOA     k51.com. root.k51.com. (
+@       IN      SOA     k44.com. root.k44.com. (
                         2025100401 ; Serial (format YYYYMMDDXX)
                         604800     ; Refresh (1 minggu)
                         86400      ; Retry (1 hari)
@@ -50,8 +49,8 @@ $TTL    604800          ; Waktu cache default (detik)
                         604800 )   ; Negative Cache TTL
 ;
 
-0.89.10.in-addr.arpa.       IN      NS      k51.com.
-42       IN      PTR     k51.com.
+0.89.10.in-addr.arpa.       IN      NS      k44.com.
+42       IN      PTR     k44.com.
 
 
 ln -s /etc/init.d/named /etc/init.d/bind9

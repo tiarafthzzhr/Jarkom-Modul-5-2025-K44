@@ -24,9 +24,9 @@ echo "nameserver 192.168.122.1" > /etc/resolv.conf
 echo 1 > /proc/sys/net/ipv4/ip_forward
 route add default gw 192.233.0.5
 route add -net 192.233.0.0 netmask 255.255.255.252 gw 192.233.0.5 
-aroute add -net 192.233.0.4 netmask 255.255.255.252 gw 192.233. 
-route add -net 192.233.0.8 netmask 255.255.255.252 gw 192.233. 
-route add -net 192.233.0.12 netmask 255.255.255.252 gw 192.233. 
+aroute add -net 192.233.0.4 netmask 255.255.255.252 gw 192.233.5 
+route add -net 192.233.0.8 netmask 255.255.255.252 gw 192.233.5
+route add -net 192.233.0.12 netmask 255.255.255.252 gw 192.233.5 
 route add -net 192.233.0.128 netmask 255.255.255.128 gw 192.233.0.10 
 route add -net 192.233.1.0 netmask 255.255.255.0 gw 192.233.0.5 
 route add -net 192.233.0.16 netmask 255.255.255.252 gw 192.233.0.5 

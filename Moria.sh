@@ -23,19 +23,19 @@ echo "nameserver 192.168.122.1" > /etc/resolv.conf
 
 echo 1 > /proc/sys/net/ipv4/ip_forward
 route add default gw 192.233.0.17
-route add -net 192.233.0.0 netmask 255.255.255.252 gw 192.233.0.17 #A1
-route add -net 192.233.0.4 netmask 255.255.255.252 gw 192.233.0.17 #A2
-route add -net 192.233.0.8 netmask 255.255.255.252 gw 192.233.0.17 #A3
-route add -net 192.233.0.12 netmask 255.255.255.252 gw 192.233.0.17 #A4
-route add -net 192.233.0.128 netmask 255.255.255.128 gw 192.233.0.17 #A5
-route add -net 192.233.1.0 netmask 255.255.255.0 gw 192.233.0.17 #A6
-# route add -net 192.233.0.16 netmask 255.255.255.252 gw 192.233. #A7
-# route add -net 192.233.0.20 netmask 255.255.255.252 gw 192.233. #A8
-# route add -net 192.233.0.24 netmask 255.255.255.252 gw 192.233. #A9
-route add -net 192.233.0.64 netmask 255.255.255.192 gw 192.233.0.26 #A10
-route add -net 192.233.0.32 netmask 255.255.255.248 gw 192.233.0.26 #A11
-route add -net 192.233.0.28 netmask 255.255.255.252 gw 192.233.0.17 #A12
-route add -net 192.233.0.40 netmask 255.255.255.248 gw 192.233.0.17 #A13
+route add -net 192.233.0.0 netmask 255.255.255.252 gw 192.233.0.17 
+route add -net 192.233.0.4 netmask 255.255.255.252 gw 192.233.0.17 
+route add -net 192.233.0.8 netmask 255.255.255.252 gw 192.233.0.17 
+route add -net 192.233.0.12 netmask 255.255.255.252 gw 192.233.0.17 
+route add -net 192.233.0.128 netmask 255.255.255.128 gw 192.233.0.17 
+route add -net 192.233.1.0 netmask 255.255.255.0 gw 192.233.0.17 
+route add -net 192.233.0.16 netmask 255.255.255.252 gw 192.233.
+route add -net 192.233.0.20 netmask 255.255.255.252 gw 192.233.
+route add -net 192.233.0.24 netmask 255.255.255.252 gw 192.233.
+route add -net 192.233.0.64 netmask 255.255.255.192 gw 192.233.0.26
+route add -net 192.233.0.32 netmask 255.255.255.248 gw 192.233.0.26
+route add -net 192.233.0.28 netmask 255.255.255.252 gw 192.233.0.17
+route add -net 192.233.0.40 netmask 255.255.255.248 gw 192.233.0.17
 
 apt update
 apt install isc-dhcp-relay -y

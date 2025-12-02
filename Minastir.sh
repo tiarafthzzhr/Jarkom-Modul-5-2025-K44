@@ -37,7 +37,7 @@ route add -net 192.233.0.32 netmask 255.255.255.248 gw 192.233.0.1
 route add -net 192.233.0.28 netmask 255.255.255.252 gw 192.233.0.1 
 route add -net 192.233.0.40 netmask 255.255.255.248 gw 192.233.0.1 
 
-# DHCP RELAY
+# DHCP Relay
 apt update
 apt install isc-dhcp-relay -y
 

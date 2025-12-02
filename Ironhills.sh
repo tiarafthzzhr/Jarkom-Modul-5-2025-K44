@@ -12,8 +12,6 @@ EOF
 
 echo "nameserver 192.168.122.1" > /etc/resolv.conf
 
-
-# webserver
 apt update
 apt install -y apache2
 service apache2 start

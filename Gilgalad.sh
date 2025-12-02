@@ -1,4 +1,3 @@
-# CLIENT DHCP
 cat << EOF > /etc/network/interfaces
 auto lo
 iface lo inet loopback
