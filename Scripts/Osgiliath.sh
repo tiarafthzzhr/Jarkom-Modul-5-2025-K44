@@ -32,18 +32,21 @@ while true; do
     sleep 1
 done
 iptables -t nat -A POSTROUTING -s 192.233.0.0/16 -o eth0 -j SNAT --to-source $IP_INTERFACE_NAT
-route add -net 192.233.0.0 netmask 255.255.255.252 gw 192.233.2
+
+#A1
 route add -net 192.233.0.4 netmask 255.255.255.252 gw 192.233.0.2 
 route add -net 192.233.0.8 netmask 255.255.255.252 gw 192.233.0.2 
 route add -net 192.233.0.12 netmask 255.255.255.252 gw 192.233.0.2 
 route add -net 192.233.0.128 netmask 255.255.255.128 gw 192.233.0.2 
 route add -net 192.233.1.0 netmask 255.255.255.0 gw 192.233.0.2 
-route add -net 192.233.0.16 netmask 255.255.255.252 gw 192.233. 
+
+#A7
 route add -net 192.233.0.20 netmask 255.255.255.252 gw 192.233.0.18 
 route add -net 192.233.0.24 netmask 255.255.255.252 gw 192.233.0.18 
 route add -net 192.233.0.64 netmask 255.255.255.192 gw 192.233.0.18 
 route add -net 192.233.0.32 netmask 255.255.255.248 gw 192.233.0.18 
-route add -net 192.233.0.28 netmask 255.255.255.252 gw 192.233. 
+
+#A12
 route add -net 192.233.0.40 netmask 255.255.255.248 gw 192.233.0.30 
 
 # DHCP Relay
