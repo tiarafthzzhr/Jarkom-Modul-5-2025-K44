@@ -126,22 +126,40 @@ Agar jaringan aman, terapkan aturan firewall berikut.
    - Akses hanya diizinkan untuk **Faksi Kurcaci & Pengkhianat (Durin & Khamul)** serta **Faksi Manusia (Elendil & Isildur)**.
    - Karena hari ini adalah **Rabu** (simulasikan waktu server), mereka harusnya tertolak. Gunakan **curl** untuk membuktikan blokir waktu ini.
 
+
+
 5. Sembari menunggu, pasukan berlatih di server **Palantir**. Akses dibatasi berdasarkan ras:
 
    - **Faksi Elf (Gilgalad & Cirdan):** Boleh akses jam **07.00 – 15.00**.
    - **Faksi Manusia (Elendil & Isildur):** Boleh akses jam **17.00 – 23.00**.
    - Gunakan **curl** untuk memastikan akses sesuai jam.
+   - Dokumentasi
+<img width="580" height="202" alt="image" src="https://github.com/user-attachments/assets/9818e175-34c1-4fc5-b9df-74342b871487" />
+<img width="561" height="182" alt="image" src="https://github.com/user-attachments/assets/009a6530-5285-4eb4-921f-4ace5d1aeaf0" />
+<img width="1059" height="270" alt="image" src="https://github.com/user-attachments/assets/6ebaa050-7c07-45e4-9139-4dd03790a355" />
+<img width="533" height="160" alt="image" src="https://github.com/user-attachments/assets/3b0dd4a1-af12-4700-8901-a650819f2285" />
+<img width="1281" height="209" alt="image" src="https://github.com/user-attachments/assets/12e87771-2fe5-4866-a45d-d783c40b249f" />
+<img width="534" height="162" alt="image" src="https://github.com/user-attachments/assets/15b31af2-a578-4391-af11-d9408c9e2a10" />
+<img width="1288" height="189" alt="image" src="https://github.com/user-attachments/assets/19f2049a-b0ad-41b9-9df1-a12bd3a24b02" />
 
 6. Pasukan Manusia (Elendil) diminta menguji keamanan **Palantir**. Lakukan simulasi port scan dengan **nmap** rentang port 1–100.
 
    - a. Web server harus memblokir scan port yang melebihi **15 port** dalam waktu **20 detik**.  
    - b. Penyerang yang terblokir **tidak dapat melakukan ping, nc, atau curl** ke Palantir.  
    - c. Catat log iptables dengan prefix **"PORT_SCAN_DETECTED"**.
+   - Dokumentasi
+````
+````
 
 7. Hari Sabtu tiba. Akses ke **IronHills** dibatasi untuk mencegah overload.
 
    - Akses ke IronHills hanya boleh berasal dari **3 koneksi aktif per IP** dalam waktu bersamaan.
    - Lakukan uji coba beban (**stress test**) menggunakan **curl** atau **ab**.
+   - Dokumentasi
+<img width="612" height="384" alt="image" src="https://github.com/user-attachments/assets/f0037317-15d7-419b-969e-f1f1158ebe2c" />
+<img width="731" height="54" alt="image" src="https://github.com/user-attachments/assets/8a85b3ee-743d-4d89-ab67-72f079f6e333" />
+<img width="731" height="149" alt="image" src="https://github.com/user-attachments/assets/1a4479cc-196d-4258-94dc-f76fd9809cc7" />
+
 
 8. Selama uji coba, terdeteksi anomali. Setiap paket yang dikirim **Vilya** menuju **Khamul**, ternyata dibelokkan oleh sihir hitam menuju **IronHills**.
 
