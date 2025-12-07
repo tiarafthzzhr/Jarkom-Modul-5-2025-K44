@@ -93,8 +93,7 @@ Agar jaringan aman, terapkan aturan firewall berikut.
 1. Agar jaringan Aliansi bisa terhubung ke luar (Valinor/Internet), konfigurasi routing menggunakan **iptables**.
 
    - **Syarat: Kalian TIDAK DIPERBOLEHKAN menggunakan target MASQUERADE.**
-  
-### Dokumentasi
+   - Dokumentasi
 <img width="1710" height="246" alt="image" src="https://github.com/user-attachments/assets/c835e40c-08be-4828-ba58-d573f0b51c94" />
 <img width="1137" height="389" alt="image" src="https://github.com/user-attachments/assets/5d132640-9196-4e81-8739-3bcaf14cff8b" /> 
 
@@ -104,17 +103,23 @@ Agar jaringan aman, terapkan aturan firewall berikut.
 2. Karena **Vilya** (DHCP) menyimpan data vital, pastikan **tidak ada perangkat lain yang bisa melakukan PING ke Vilya**.
 
    - Namun, **Vilya tetap leluasa** dapat mengakses/ping ke seluruh perangkat lain.
-
-### Dokumentasi
+   - Dokumentasi
 <img width="1113" height="185" alt="image" src="https://github.com/user-attachments/assets/58a5f0ff-bbe1-40eb-9f8a-b3a3bc4caeec" />
 <img width="1144" height="156" alt="image" src="https://github.com/user-attachments/assets/7d85a5a4-e5b7-4acc-b49c-e387883c5137" />
 <img width="934" height="166" alt="image" src="https://github.com/user-attachments/assets/6da3178b-eacc-4d0e-8f9e-45fca9bd2281" />
+<img width="778" height="108" alt="image" src="https://github.com/user-attachments/assets/c0955573-2d54-4adc-940e-045e3451331c" />
+
 
 
 3. Agar lokasi pasukan tidak bocor, **hanya Vilya yang dapat mengakses Narya (DNS)**.
 
    - Gunakan **nc (netcat)** untuk memastikan akses port DNS (53) ini.
    - *[Hapus aturan ini setelah pengujian agar internet lancar untuk install paket]*
+   - Dokumentasi
+<img width="516" height="82" alt="image" src="https://github.com/user-attachments/assets/2a472079-b6be-4bbb-b20a-f84e02ab17fc" />
+<img width="1014" height="312" alt="image" src="https://github.com/user-attachments/assets/ae82076b-036b-40ed-96a1-3670d9ed0af8" />
+<img width="1270" height="140" alt="image" src="https://github.com/user-attachments/assets/ba3b4c7e-93aa-4c0c-a873-f4f93093020b" />
+<img width="1285" height="319" alt="image" src="https://github.com/user-attachments/assets/4fdd460b-cdfb-47b9-aa90-1193e828d9a5" />
 
 4. Aktivitas mencurigakan terdeteksi di **IronHills**. Berdasarkan dekrit Raja, IronHills hanya boleh diakses pada **Akhir Pekan (Sabtu & Minggu)**.
 
