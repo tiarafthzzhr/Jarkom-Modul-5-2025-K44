@@ -93,39 +93,44 @@ Agar jaringan aman, terapkan aturan firewall berikut.
 1. Agar jaringan Aliansi bisa terhubung ke luar (Valinor/Internet), konfigurasi routing menggunakan **iptables**.
 
    - **Syarat: Kalian TIDAK DIPERBOLEHKAN menggunakan target MASQUERADE.**
+  
+### Dokumentasi
+- <img width="1710" height="246" alt="image" src="https://github.com/user-attachments/assets/c835e40c-08be-4828-ba58-d573f0b51c94" />
+- <img width="1137" height="389" alt="image" src="https://github.com/user-attachments/assets/5d132640-9196-4e81-8739-3bcaf14cff8b" />
+- 
 
-2. Karena **Vilya** (DHCP) menyimpan data vital, pastikan **tidak ada perangkat lain yang bisa melakukan PING ke Vilya**.
+3. Karena **Vilya** (DHCP) menyimpan data vital, pastikan **tidak ada perangkat lain yang bisa melakukan PING ke Vilya**.
 
    - Namun, **Vilya tetap leluasa** dapat mengakses/ping ke seluruh perangkat lain.
 
-3. Agar lokasi pasukan tidak bocor, **hanya Vilya yang dapat mengakses Narya (DNS)**.
+4. Agar lokasi pasukan tidak bocor, **hanya Vilya yang dapat mengakses Narya (DNS)**.
 
    - Gunakan **nc (netcat)** untuk memastikan akses port DNS (53) ini.
    - *[Hapus aturan ini setelah pengujian agar internet lancar untuk install paket]*
 
-4. Aktivitas mencurigakan terdeteksi di **IronHills**. Berdasarkan dekrit Raja, IronHills hanya boleh diakses pada **Akhir Pekan (Sabtu & Minggu)**.
+5. Aktivitas mencurigakan terdeteksi di **IronHills**. Berdasarkan dekrit Raja, IronHills hanya boleh diakses pada **Akhir Pekan (Sabtu & Minggu)**.
 
    - Akses hanya diizinkan untuk **Faksi Kurcaci & Pengkhianat (Durin & Khamul)** serta **Faksi Manusia (Elendil & Isildur)**.
    - Karena hari ini adalah **Rabu** (simulasikan waktu server), mereka harusnya tertolak. Gunakan **curl** untuk membuktikan blokir waktu ini.
 
-5. Sembari menunggu, pasukan berlatih di server **Palantir**. Akses dibatasi berdasarkan ras:
+6. Sembari menunggu, pasukan berlatih di server **Palantir**. Akses dibatasi berdasarkan ras:
 
    - **Faksi Elf (Gilgalad & Cirdan):** Boleh akses jam **07.00 – 15.00**.
    - **Faksi Manusia (Elendil & Isildur):** Boleh akses jam **17.00 – 23.00**.
    - Gunakan **curl** untuk memastikan akses sesuai jam.
 
-6. Pasukan Manusia (Elendil) diminta menguji keamanan **Palantir**. Lakukan simulasi port scan dengan **nmap** rentang port 1–100.
+7. Pasukan Manusia (Elendil) diminta menguji keamanan **Palantir**. Lakukan simulasi port scan dengan **nmap** rentang port 1–100.
 
    - a. Web server harus memblokir scan port yang melebihi **15 port** dalam waktu **20 detik**.  
    - b. Penyerang yang terblokir **tidak dapat melakukan ping, nc, atau curl** ke Palantir.  
    - c. Catat log iptables dengan prefix **"PORT_SCAN_DETECTED"**.
 
-7. Hari Sabtu tiba. Akses ke **IronHills** dibatasi untuk mencegah overload.
+8. Hari Sabtu tiba. Akses ke **IronHills** dibatasi untuk mencegah overload.
 
    - Akses ke IronHills hanya boleh berasal dari **3 koneksi aktif per IP** dalam waktu bersamaan.
    - Lakukan uji coba beban (**stress test**) menggunakan **curl** atau **ab**.
 
-8. Selama uji coba, terdeteksi anomali. Setiap paket yang dikirim **Vilya** menuju **Khamul**, ternyata dibelokkan oleh sihir hitam menuju **IronHills**.
+9. Selama uji coba, terdeteksi anomali. Setiap paket yang dikirim **Vilya** menuju **Khamul**, ternyata dibelokkan oleh sihir hitam menuju **IronHills**.
 
    - Gunakan **nc** untuk memastikan alur pengalihan ini (Redirect trafik dari Client ke Server).
 
