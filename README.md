@@ -164,6 +164,14 @@ Agar jaringan aman, terapkan aturan firewall berikut.
 8. Selama uji coba, terdeteksi anomali. Setiap paket yang dikirim **Vilya** menuju **Khamul**, ternyata dibelokkan oleh sihir hitam menuju **IronHills**.
 
    - Gunakan **nc** untuk memastikan alur pengalihan ini (Redirect trafik dari Client ke Server).
+   - Dokumentasi
+<img width="372" height="90" alt="image" src="https://github.com/user-attachments/assets/a3f1a33a-bad6-4d01-9680-bf0b9d45c556" />
+<img width="696" height="87" alt="image" src="https://github.com/user-attachments/assets/5b39e308-666d-4d24-b925-b6c3d7ea9f4c" />
+<img width="814" height="112" alt="image" src="https://github.com/user-attachments/assets/23d62539-296f-48c3-9f78-72d57a47b2b2" />
+<img width="308" height="107" alt="image" src="https://github.com/user-attachments/assets/1761ecdc-c105-4ddc-a4d4-a06c65e5770a" />
+
+
+
 
 ---
 
@@ -174,3 +182,15 @@ Agar jaringan aman, terapkan aturan firewall berikut.
 
    - Gunakan **nc** dan **ping** untuk membuktikan Khamul terisolasi total.
    - **Penting:** Yang diblokir adalah **Khamul (5 Host)**, **BUKAN Durin (50 Host)**. Jangan sampai salah sasaran.
+   - Dokumentasi
+<img width="666" height="95" alt="image" src="https://github.com/user-attachments/assets/83006978-2a3a-4396-b1e6-f9d972e600cd" />
+<img width="640" height="89" alt="image" src="https://github.com/user-attachments/assets/af69cd2b-0cb2-4140-b5af-d25a1d18f282" />
+<img width="746" height="77" alt="image" src="https://github.com/user-attachments/assets/b1de55a5-ed09-456e-9de9-dc7ea36568e0" />
+<img width="756" height="136" alt="image" src="https://github.com/user-attachments/assets/2842bc95-dd6e-42ed-9542-463b3f8ea319" />
+<img width="761" height="174" alt="image" src="https://github.com/user-attachments/assets/953ad53a-8c9c-469f-aac7-7e1ed8acd2f0" />
+
+
+
+
+
+
